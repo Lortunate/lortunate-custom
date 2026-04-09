@@ -24,10 +24,10 @@
     ],
     "env_add_path": "tools\\bin",
     "env_set": {
-        "UV_CACHE_DIR": "$dir\\cache",
-        "UV_CONFIG_DIR": "$dir\\config",
-        "UV_TOOL_DIR": "$dir\\tools",
-        "UV_PYTHON_INSTALL_DIR": "$dir\\python"
+        "UV_CACHE_DIR": "$persist_dir\\cache",
+        "UV_CONFIG_DIR": "$persist_dir\\config",
+        "UV_TOOL_DIR": "$persist_dir\\tools",
+        "UV_PYTHON_INSTALL_DIR": "$persist_dir\\python"
     },
     "persist": [
         "cache",
@@ -35,7 +35,7 @@
         "tools",
         "python"
     ],
-    "notes": "uv's cache, config, tools and python installations are persisted in the Scoop persist directory.",
+    "notes": "uv's cache, config, tools and python installations are set directly to the Scoop persist directory.",
     "checkver": {
         "github": "https://github.com/astral-sh/uv"
     },

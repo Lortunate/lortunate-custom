@@ -5,7 +5,7 @@
     "license": "BSD-3-Clause",
     "notes": [
         "Run 'flutter doctor' to see if there are any platform dependencies you need to complete the setup.",
-        "The SDK's internal cache (bin\\cache) and the Pub cache (pub-cache) are persisted within the Scoop persist directory."
+        "The SDK's internal cache (bin\\cache) and Pub cache are persisted in Scoop's persist directory; FLUTTER_ROOT and DART_SDK intentionally stay on current paths."
     ],
     "suggest": {
         "Android SDK Tools": "android-clt",
@@ -25,7 +25,7 @@
     ],
     "env_set": {
         "FLUTTER_ROOT": "$dir",
-        "PUB_CACHE": "$dir\\pub-cache",
+        "PUB_CACHE": "$persist_dir\\pub-cache",
         "DART_SDK": "$dir\\bin\\cache\\dart-sdk"
     },
     "persist": [

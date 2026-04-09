@@ -24,14 +24,14 @@
     ],
     "env_set": {
         "GOROOT": "$dir",
-        "GOPATH": "$dir\\go",
-        "GOCACHE": "$dir\\cache"
+        "GOPATH": "$persist_dir\\go",
+        "GOCACHE": "$persist_dir\\cache"
     },
     "persist": [
         "go",
         "cache"
     ],
-    "notes": "Go's SDK (GOROOT), user workspace (GOPATH) and build cache are persisted in the Scoop persist directory.",
+    "notes": "Go's SDK root (GOROOT) stays on the current install path, while GOPATH and GOCACHE are set directly to the Scoop persist directory.",
     "checkver": {
         "url": "https://golang.org/dl/",
         "regex": "go([\\d.]+)\\.windows-"
