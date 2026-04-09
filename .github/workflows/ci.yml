@@ -44,7 +44,7 @@ jobs:
 
             try {
               $raw = Get-Content $file.FullName -Raw
-              $manifest = $raw | ConvertFrom-Json -Depth 100
+              $manifest = $raw | ConvertFrom-Json
             } catch {
               Write-Error "Invalid JSON: $($file.Name) - $_"
               $errors++
